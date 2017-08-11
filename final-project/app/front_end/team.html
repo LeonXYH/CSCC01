@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="databaseApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<meta charset="utf-8"/>
+	<title>DD</title>
+	<!-- <link href="style/main.css" rel="stylesheet" type="text/css"/>
+	<link href="style/form.css" rel="stylesheet" type="text/css"/> -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+</head>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+	<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold margin-top:50px;" id="mySidebar"><br>
+	  <h3 class="w3-padding-64 w3-center">TEAM</h3>
+	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+	  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">INTRODUCTION</a> 
+	  <a href="#teaminfo" onclick="w3_close()" class="w3-bar-item w3-button">TEAM INFO</a> 
+	  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+	</nav>
+
+	<div class="w3-top">
+	  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+	    <a href="#home" class="w3-bar-item w3-button"><b></b></a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+	      <a href="/" class="w3-bar-item w3-button">Home</a>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <img src="http://www.editage.com/insights/sites/default/files/iStock_000002193842Medium_0_0.jpg" alt="No image" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>INTRODUCTION</h4>
+      <p>Integrow is a book platform for book buyers and sellers to communicate and share information. We target university students and are mainly committed to assist them to transact used textbooks.
+      </p> 
+      <p>
+      With Integrow, help yourself by creating a post of your book, or search for your desired books. You can also bargain with other buyers/sellers using the feature of email. Take a look at our features and experience convenience/efficiency.
+      </p>
+    </div>
+  </div>
+
+  <!-- team info section -->
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="teaminfo">
+    <h4><b>TEAM INFO</b></h4>
+    <!-- <img alt="Me" class="w3-image w3-padding-32" width="600" height="650"> -->
+
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Our Team Name => Team Name</h4>
+      <p></p>
+      <h4>Ken (Minqi) Wang</h4>
+      <p>I’m Ken (Minqi) Wang, a third year student in computer science specialist program, software engineering stream. Here goes my habits: When I study: math > programming > other things. When I have fun: singing > DOTA2 > workout = cooking.
+      </p>
+
+      <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" href="./resume/ken.docx" download="Ken.pdf">Download Resume</a></p>
+      <p></p>
+      <p></p>
+      <h4>VadimSoltan</h4>
+      <p>I am student going into my third year at University of Toronto. I am currently studying computer science and will focus in computational linguistics and natural language processing in the future years. I consider communication an essential part of today’s competitive and market driven environment which is why I decided to focus on linguistics and language processing. I also enjoy reading and writing and believe that through computer science and linguistics we could provide society with technologies which would benefit everyone and continue improving on ones which already exist.
+      </p>
+
+      <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" href="./resume/Vadim_Soltan_Resume.docx" download="VadimSoltan.pdf">Download Resume</a></p>
+<p></p>
+<p></p>
+      <h4>Haitao Zhu</h4>
+      <p> I am currently studying in University of Toronto Computer Science Specialist Software stream, and I am really interesting in designing and building applications and wevbsites.
+      </p>
+      <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" href="./resume/zhuhaitao.doc" download="Vickers.pdf">Download Resume</a></p>
+<p></p>
+<p></p>
+      <h4>Jingying Li</h4>
+      <p> 3rd year student in U of T, who currently enrolled in specialist of statistics, major of computer science and minor of religion.  In area of computer science, the major interest is in computer graphics and front end development. Formerly implemented web app as front end developer for an education organization in last summer.  In her spare time  she's a cat lover, and takes tea blending, fragrance blending, classic music and reading as interest.
+      </p>
+      <p><a class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" href="./resume/ll.pages" download="ll.pages">Download Resume</a></p>
+
+      <p></p>
+      <h4>Xinyi Hou(Leon)</h4>
+      <p> I'm a third year UTSC CS Specialist student. I  have a decent understand about Python, Java, C, C# and etc programming languages' name spelling. I'm good at Windows, Linus, OS and etc operation system's open and close; Eclipse, android studio and etc developer tools' install and uninstall.XD
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="contact">
+    <h4><b>CONTACT</b></h4>
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Email</h4>
+      <a >vickershhh@gmail.com</a>
+    </div>
+  </div>
+
+
+
+	
+
+</body>
+
+
+
+
+</html>

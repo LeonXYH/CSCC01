@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/post_min.css">
+  <link rel="stylesheet" href="css/post-theme.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet1">
+
+
+  </head>
+
+  <p data-toggle="modal" data-target="#viewUserProfile" id="testUserProfile" style="display: none"></p>
+  <body>
+    	<div class="navbar navbar-custom" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+			<h1><a class="navbar-brand" href="index.html">Integrow</a><h1>
+			</div>
+		</div>
+	</div>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2" id="poster">
+			<img alt="Bootstrap Image Preview" id="userImage" src="" class="img-thumbnail">
+			<p id="name"></p>
+			<p id= "username" style="display: none"></p>
+			<button type="button" class="btn btn-default">
+				Profile of Poster
+			</button>
+		</div>
+
+
+
+
+
+	<div class="modal fade" id="viewUserProfile" role="dialog">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+	        <div class="modal-body">
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                          <span aria-hidden="true">&times;</span>
+	                      </button>
+	          <center class="text-bold" style="color:white;font-family:verdana;">Profile of User</center>
+	          <div class="facts">
+	            <div class="sign-up">
+	              <form class="register">
+	                <ul>
+	                  <li><span font-weight="bold" style="color:white;font-family:verdana;">Username: </span><span id="currUserName" style="color:white;font-family:verdana;"></span></li>
+	                  <li><span style="color:white;font-family:verdana;">Name: </span><span id="currName" style="color:white;font-family:verdana;"></span></li>
+	                  <li><span style="color:white;font-family:verdana;">Emai: </span><span id="currUserEmail" style="color:white;font-family:verdana;"></span></li>
+	                  <li><span style="color:white;font-family:verdana;">Phone: </span><span id="currUserPhone" style="color:white;font-family:verdana;"></span></li>
+	                  <li><span style="color:white;font-family:verdana;">Location: </span><span id="currUserLocation" style="color:white;font-family:verdana;"></span></li>
+	                </ul>
+	              </form>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	 </div>
+
+
+
+		<div class="col-md-8">
+			 <span class="label label-default" id="title"></span>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>
+						</th>
+						<th>
+						</th>
+						<th>
+						</th>
+						<th>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Book Name:
+						</td>
+						<td>
+						</td>
+						<td id="bookName">
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+						Author:
+						</td>
+						<td>
+						</td>
+						<td id="author">							
+						</td>
+						<td>
+
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							Tags
+						</td>
+						<td>
+							
+						</td>
+						<td id="tags">
+						</td>
+							
+						<td>
+							
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							Description:
+						</td>
+						<td>
+						</td>
+						<td>
+							<p id="description"></p>
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							Price
+						</td>
+						<td>
+						</td>
+						<td>
+							<p id="price"></p>
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Image:</p>
+			<img alt="Bootstrap Image Preview" src="" id="image" class="img-thumbnail">
+
+		</div>
+		<div class="col-md-2">
+			<div class="btn-group">
+				 
+				<button class="btn btn-default">
+					...
+				</button> 
+				<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li>
+						<a id="edit" data-toggle="modal" data-target="#post" style="display: none">Edit</a>
+					</li>
+					<li>
+						<a data-toggle="modal" data-target="#report">Report</a>
+					</li>
+					<li>
+						<a id="delete" data-toggle="modal" data-target="#deletePost" style="display: none">Delete</a>
+					</li>
+				</ul>
+
+			</div>	
+		</div>
+		
+  <div class="modal fade" id="post" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close3">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+          <div class="text-bold" style="font-size: 20pt; text-align: center;color:white">Update this post</div>
+          <div class="facts">
+            <div class="sign-up">
+              <form id="editPostForm" class="register">
+                <input placeholder="title" type="text" id="editTitle" required="">
+                <input placeholder="author" type="text" id="editAuthor" required="">
+                <input placeholder="price" type="text" id="editPrice" required="">
+                <textarea rows="10" cols="70" name="description" id="editDescription" form="makePostForm" style="background-color : black; color : white; border : solid 10px black; border-radius : 5px;" placeholder="Enter description here..." required=""></textarea>
+                <select id="type">
+                  <option value="None">None</option>
+                    <option value="Textbook">Textbook</option>
+                    <option value="None-textbook">None-textbook</option>
+                </select>
+                <select id="subject">
+                  <option value="None">None</option>
+                    <option value="New">New</option>
+                    <option value="Used">Used</option>
+                </select>
+                <br></br>Select image to upload:
+                <input type="file" value="fileUpload" id="uploadImage" accept="image/gif, image/jpeg, image/png">
+                <input type="submit" value="Update this post">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="deletePost" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="deleteClose">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+          <div class="text-bold" style="color:red;font-size: 20pt;" ><center>Delete this Post</center></div>
+          <div class="facts">
+          <p style="color:red;"><b>Waring! You are about to delete this post!</b></p>
+          <p style="color:red;">I need to confirm your Sanity. What's 5 * 6 ? Answer this below and press the Delete button to delete</p>
+            <div class="sign-up">
+              <form id="deleteForm" class="register">
+                <input placeholder="Answer" type="text" id="answer">
+
+                <input type="submit" value="Delete">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="modal fade" id="report" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="reportClose">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+          <div class="text-bold" style="color:white;font-size: 20pt"><center>Report</center></div>
+          <div class="facts">
+          <p style="color:white;"><b>Please enter the reasons!</b></p>
+            <div class="sign-up">
+              <form id="reportForm" class="register">
+                <input placeholder="Reason" type="text" id="reason">
+
+                <input type="submit" value="Report">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+		
+	</div>
+	</div>
+</div>
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/post_js/model.js"></script>
+	<script src="js/post_js/view.js"></script>
+	<script src="js/post_js/controller.js"></script>
+  </body>
+</html>
